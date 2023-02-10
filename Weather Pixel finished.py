@@ -9,7 +9,7 @@ g = geocoder.ip('me')
 latitude, longitude = g.latlng
 
 # API setup to get current weather conditions
-api_key = "f5670863efe47929c7d10d1cc693b9ce"
+api_key = ""
 url = f"http://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid={api_key}"
 data = requests.get(url).json()
 
@@ -30,7 +30,7 @@ print("Description: ", description)
 print("Time of day: ", time_of_day)
 
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = ""
 
 # Use Op
 
